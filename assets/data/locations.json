@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Austin",
+    "state": "Texas",
+    "tag": "Growing neighborhoods. Thoughtful plumbing.",
+    "intro": "Need plumbing help in Austin? Apex Plumbing handles enquiries for leak detection, drain cleaning, fixture repairs, water heaters, and wider pipework. Tell us about the property, the symptoms, and access requirements so we can discuss an appropriate service plan.",
+    "issues": [
+      [
+        "Mineral deposits",
+        "Ask your utility for a current water-quality report before choosing treatment equipment. Mineral buildup can affect fixtures and hot-water equipment."
+      ],
+      [
+        "Renovation coordination",
+        "Older-home upgrades may involve mixed materials and undocumented alterations. Verify routes and permits before moving fixtures."
+      ],
+      [
+        "Outdoor connections",
+        "Irrigation connections, hose bibbs, and backflow devices need appropriate installation and seasonal checks."
+      ]
+    ],
+    "residential": "For an older bungalow, document the pipe materials and previous repairs before choosing spot repair or repiping. For a newer home, keep warranty information and fixture model numbers accessible.",
+    "commercial": "Restaurants and tenant improvements need coordinated shutdown windows, grease-management planning where applicable, and a clear division between landlord and tenant responsibilities.",
+    "near": "Round Rock, Cedar Park, and Pflugerville",
+    "faq": [
+      "Do you provide plumbing services in Austin?",
+      "Yes. Austin is one of our listed service areas. Share the address and service requirements to discuss availability, scheduling, and access before a visit."
+    ]
+  },
+  {
+    "name": "Round Rock",
+    "state": "Texas",
+    "tag": "Practical care for busy family homes.",
+    "intro": "Apex Plumbing supports plumbing enquiries in Round Rock, from recurring drain problems and fixture leaks to water-heater and pipe repairs. Share how the problem affects your household or business so the proposed work can be planned around your needs.",
+    "issues": [
+      [
+        "Household hot-water demand",
+        "A growing household can outgrow its hot-water capacity. Compare simultaneous demand before selecting replacement equipment."
+      ],
+      [
+        "Hidden irrigation leaks",
+        "Separate indoor and outdoor water use when investigating unexplained consumption. Ask a qualified irrigation specialist about irrigation faults."
+      ],
+      [
+        "Pressure changes",
+        "Measure pressure under normal conditions rather than assuming low flow is a utility problem. A pressure regulator may need assessment."
+      ]
+    ],
+    "residential": "Map your water shutoffs and label the correct valves. A practical maintenance visit can prioritize leaking fixtures, visible corrosion, and changes in hot-water performance without unnecessary replacement.",
+    "commercial": "Office and retail plumbing work should protect access routes, account for accessible restroom needs, and coordinate temporary interruptions with managers and occupants.",
+    "near": "Austin, Pflugerville, and Cedar Park",
+    "faq": [
+      "Do you provide plumbing services in Round Rock?",
+      "Yes. Round Rock is one of our listed service areas. Share the address and service requirements to discuss availability, scheduling, and access before a visit."
+    ]
+  },
+  {
+    "name": "Cedar Park",
+    "state": "Texas",
+    "tag": "Reliable routines. More comfortable spaces.",
+    "intro": "Arrange plumbing services in Cedar Park for leaks, blocked drains, toilets, water heaters, and bathroom upgrades. We start with the condition and needs of your property, then discuss suitable repair or installation options and scheduling.",
+    "issues": [
+      [
+        "Guest-bathroom drain odors",
+        "Unused drain traps can lose their water seal. If adding water does not resolve an odor, arrange a professional assessment."
+      ],
+      [
+        "Bathroom upgrades",
+        "Confirm rough-in dimensions and valve compatibility before ordering fixtures for a remodel."
+      ],
+      [
+        "Water heater maintenance",
+        "Match maintenance to the manufacturer and water conditions rather than following a one-size-fits-all flushing schedule."
+      ]
+    ],
+    "residential": "A bathroom refresh works best when fixture specifications, shutoff condition, and hidden connections are checked before decorative work. Retain product manuals for later servicing.",
+    "commercial": "Small-business renovations benefit from an agreed scope, fixture schedule, inspection plan, and a realistic handover checklist. Emergency access should remain clear during any work.",
+    "near": "Pflugerville, Austin, and Round Rock",
+    "faq": [
+      "Do you provide plumbing services in Cedar Park?",
+      "Yes. Cedar Park is one of our listed service areas. Share the address and service requirements to discuss availability, scheduling, and access before a visit."
+    ]
+  },
+  {
+    "name": "Pflugerville",
+    "state": "Texas",
+    "tag": "From the first drip to the bigger picture.",
+    "intro": "For plumbing needs in Pflugerville, start with a clear account of the issue: which fixtures are affected, when it started, and any previous repairs. Apex Plumbing can discuss drain, leak, fixture, and pipework services for homes and business properties.",
+    "issues": [
+      [
+        "Recurring drain restrictions",
+        "Track which fixtures are affected and whether issues occur together. This helps separate local clogs from shared-line concerns."
+      ],
+      [
+        "Rental-property leaks",
+        "Provide occupants with a safe way to report water damage and identify who can authorize repairs."
+      ],
+      [
+        "Seasonal exposure",
+        "Exterior pipes and hose connections should be assessed for exposure before freezing weather. Never thaw a pipe with open flame."
+      ]
+    ],
+    "residential": "Keep a brief history of clogs, leaks, and past repairs. For a managed property, provide access instructions, occupant contact arrangements, and the owner\u2019s authorization before work starts.",
+    "commercial": "Light-commercial sites need clear responsibility for shared drains, accessible cleanouts, and coordination with neighboring occupants before any planned water interruption.",
+    "near": "Cedar Park, Austin, and Round Rock",
+    "faq": [
+      "Do you provide plumbing services in Pflugerville?",
+      "Yes. Pflugerville is one of our listed service areas. Share the address and service requirements to discuss availability, scheduling, and access before a visit."
+    ]
+  }
+]

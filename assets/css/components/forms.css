@@ -1,0 +1,200 @@
+.form-card {
+  background: #fff;
+  padding: 36px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow)
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px
+}
+
+.field {
+  display: grid;
+  gap: 8px
+}
+
+.field.full {
+  grid-column: 1/-1
+}
+
+.field label {
+  font-size: var(--body-size);
+  font-weight: 600;
+  color: var(--heading)
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #c9d3df;
+  border-radius: 8px;
+  padding: 11px 14px;
+  background: #fff;
+  color: var(--navy);
+  font-size: var(--body-size)
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--blue)
+}
+
+input[aria-invalid=true],
+select[aria-invalid=true],
+textarea[aria-invalid=true] {
+  border-color: #b42318
+}
+
+.field-error {
+  color: #b42318;
+  font-size: var(--body-size)
+}
+
+.consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: var(--body-size)
+}
+
+.consent input {
+  width: 18px;
+  min-height: 18px;
+  flex-shrink: 0;
+  margin-top: 3px
+}
+
+.consent a {
+  text-decoration: underline
+}
+
+.form-status {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--light);
+  color: var(--navy)
+}
+
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap
+}
+
+.search-field {
+  max-width: 340px;
+  flex: 1;
+  position: relative;
+  min-width: 220px
+}
+
+.search-field input {
+  padding-left: 44px
+}
+
+.search-field>.icon {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  width: 20px;
+  height: 20px
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap
+}
+
+.filter-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: var(--ui-size);
+  min-height: 44px
+}
+
+.filter-btn[aria-pressed=true] {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy)
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 35px
+}
+
+.pagination button {
+  min-width: 44px;
+  min-height: 44px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--navy)
+}
+
+.pagination button[aria-current=page] {
+  background: var(--blue);
+  color: #fff
+}
+
+.pagination button:disabled {
+  opacity: .4;
+  cursor: not-allowed
+}
+
+.form-card fieldset {
+  padding: 0;
+  border: 0;
+  min-width: 0;
+  margin: 0
+}
+
+.form-card fieldset:disabled {
+  opacity: .65
+}
+
+.field label.consent {
+  font-size: var(--body-size);
+}
+
+/* Focus and error states are clear without floating labels, shakes, or invented success. */
+input,
+select,
+textarea {
+  transition: border-color var(--motion-fast) ease-out, box-shadow var(--motion-fast) ease-out, background-color var(--motion-fast) ease-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px rgb(23 105 224 / 10%);
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  box-shadow: 0 0 0 2px rgb(180 35 24 / 8%);
+}

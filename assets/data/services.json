@@ -1,0 +1,394 @@
+[
+  {
+    "slug": "emergency-plumbing",
+    "name": "Emergency Plumbing",
+    "icon": "bolt",
+    "short": "When the unexpected happens, know your next step. Get practical help with urgent leaks and backups.",
+    "intro": "A burst pipe or overflowing fixture can quickly become more than an inconvenience. Start by protecting people, containing water only when safe, and arranging an assessment of the underlying cause.",
+    "problems": [
+      [
+        "Burst supply pipes",
+        "A sudden split can release pressurized water into walls or floors. Locate the main shutoff only if the route is dry and safe."
+      ],
+      [
+        "Overflowing fixtures",
+        "Stop using the fixture and keep children and pets away. Wastewater requires professional handling and sanitation."
+      ],
+      [
+        "Sudden loss of water",
+        "Check whether neighbors are affected and whether your utility has reported an outage before assuming an indoor fault."
+      ]
+    ],
+    "signs": "Uncontrolled water, sewage returning indoors, or a leak near electrical equipment needs urgent attention. Do not enter standing water near outlets or appliances.",
+    "solutions": [
+      [
+        "Water isolation",
+        "Identify an accessible shutoff and isolate the affected branch where possible."
+      ],
+      [
+        "Cause-based repair",
+        "Assess fittings, damaged piping, or blockages before proposing the right repair."
+      ],
+      [
+        "Recovery guidance",
+        "Explain follow-up drying, sanitation, and specialist restoration needs."
+      ]
+    ],
+    "benefit": "Calm guidance when every decision matters",
+    "extra_title": "Emergency response, without unrealistic promises",
+    "extra": "Urgent plumbing support is arranged after a direct conversation. Message Apex Plumbing with the issue and property location to check availability; no response or arrival time is guaranteed. For a gas smell, leave the area and contact the gas utility or 911 from a safe location.",
+    "faq": [
+      [
+        "How do I arrange urgent plumbing help?",
+        "Message +880 1718-658326 on WhatsApp, email alimasrafi@zohomail.com, or use the enquiry form to prepare a message. Describe the issue and location so we can discuss availability and next steps. Emergency work is by arrangement, not automatic dispatch."
+      ],
+      [
+        "Should I shut off my water?",
+        "If you can reach the main water valve without entering an unsafe area, turn it off. Do not touch electrical equipment while wet or stand in water near electricity."
+      ]
+    ]
+  },
+  {
+    "slug": "drain-cleaning",
+    "name": "Drain Cleaning",
+    "icon": "drain",
+    "short": "Clear stubborn clogs and get everyday life flowing again with an inspection-led approach.",
+    "intro": "Recurring clogs deserve more than another quick fix. An inspection-led drain service looks at where the blockage sits, what is causing it, and which clearing method suits the pipe.",
+    "problems": [
+      [
+        "Kitchen buildup",
+        "Grease and food residue can narrow a waste line over time. Avoid pouring fats down the sink, even with hot water."
+      ],
+      [
+        "Slow bathroom drains",
+        "Hair and soap residue often collect near strainers and traps. A recurring restriction may sit farther down the branch."
+      ],
+      [
+        "Multiple fixture backups",
+        "Several slow fixtures can point to a shared line problem rather than a single clogged trap."
+      ]
+    ],
+    "signs": "Repeated slow drainage, gurgling, unpleasant drain odors, or water rising in another fixture should prompt an assessment. Stop water use if sewage backs up.",
+    "solutions": [
+      [
+        "Mechanical clearing",
+        "A suitable cable machine can break up an obstruction when the pipe condition allows."
+      ],
+      [
+        "Camera assessment",
+        "Accessible lines may be inspected to identify roots, damage, or recurring blockage locations."
+      ],
+      [
+        "Targeted hydro jetting",
+        "Where suitable, controlled water jetting can remove buildup. Pipe condition is assessed first."
+      ]
+    ],
+    "benefit": "A clearer drain. A better understanding of the cause.",
+    "extra_title": "Why professional drain cleaning matters",
+    "extra": "The right tools help protect fragile pipework and reach blockages household tools cannot. Cleaning is not a cure for a collapsed line, so an honest assessment should explain when repair is the better option.",
+    "faq": [
+      [
+        "Can I use chemical drain cleaner first?",
+        "Avoid corrosive chemical drain cleaners. They can injure people and damage some materials. If you have already used one, tell your plumber exactly which product and when."
+      ],
+      [
+        "Will drain cleaning repair damaged pipes?",
+        "No. Cleaning removes restrictions; cracks, offsets, or collapse may require a separate repair. Ask whether a camera assessment would be useful."
+      ]
+    ]
+  },
+  {
+    "slug": "leak-detection",
+    "name": "Leak Detection",
+    "icon": "leak",
+    "short": "Find hidden water leaks with a careful, targeted approach that helps protect your property.",
+    "intro": "Not every leak leaves a puddle. An unexplained water bill, a persistent damp patch, or the sound of running water can signal a concealed problem. Targeted diagnosis helps avoid unnecessary opening of walls or floors.",
+    "problems": [
+      [
+        "Concealed supply leaks",
+        "Pressurized lines inside walls can leak continuously and cause damage before a stain appears."
+      ],
+      [
+        "Slab or underfloor leaks",
+        "Warm floor patches and unexplained moisture may require specialist testing rather than guesswork."
+      ],
+      [
+        "Fixture and connection leaks",
+        "Loose connections, worn seals, and fixture leaks can often be isolated without extensive access."
+      ]
+    ],
+    "signs": "Look for unexplained meter activity when fixtures are off, damp materials, discoloration, or recurring musty smells. A meter test is only an indicator, not a diagnosis.",
+    "solutions": [
+      [
+        "Pressure and isolation testing",
+        "Separate sections of the system to help narrow the source of pressure loss."
+      ],
+      [
+        "Acoustic listening",
+        "Suitable listening equipment may help identify the sound of escaping water."
+      ],
+      [
+        "Moisture and thermal assessment",
+        "Moisture readings and thermal patterns can guide an investigation, but do not independently prove a leak."
+      ]
+    ],
+    "benefit": "Find the source before choosing the repair",
+    "extra_title": "Why early leak detection matters",
+    "extra": "Addressing a small leak can reduce wasted water and limit material damage. Detection findings should explain confidence levels, access needs, and any further testing required before a repair is authorized.",
+    "faq": [
+      [
+        "Does thermal imaging see water through walls?",
+        "No. Thermal imaging shows surface temperature differences. A qualified investigation combines those observations with other tests."
+      ],
+      [
+        "Can every leak be found without opening a wall?",
+        "No. Targeted testing may reduce disruption, but some leaks require access openings or specialist investigation."
+      ]
+    ]
+  },
+  {
+    "slug": "toilet-repair",
+    "name": "Toilet Repair",
+    "icon": "toilet",
+    "short": "From running tanks to stubborn clogs, restore comfort to your bathroom.",
+    "intro": "A toilet that runs, rocks, or leaks at the base is worth addressing promptly. Many tank problems are repairable, while a damaged bowl or compromised flange may require a different solution.",
+    "problems": [
+      [
+        "Constantly running tank",
+        "Worn flappers, fill valves, or incorrect water levels can waste water between flushes."
+      ],
+      [
+        "Weak or incomplete flush",
+        "Tank components, blocked passages, or drain restrictions may prevent a complete flush."
+      ],
+      [
+        "Water around the base",
+        "A failed seal, supply leak, condensation, or cracked porcelain needs careful diagnosis."
+      ]
+    ],
+    "signs": "Arrange an assessment if the toilet refills on its own, moves when used, needs frequent plunging, or leaves water near the floor. Stop use if wastewater escapes.",
+    "solutions": [
+      [
+        "Tank component repair",
+        "Replace compatible flappers, seals, fill valves, and flush components as needed."
+      ],
+      [
+        "Seal and flange assessment",
+        "Check bowl stability, mounting conditions, and the waste connection."
+      ],
+      [
+        "Toilet installation",
+        "Select an appropriate rough-in, size, and water-efficient model for the room."
+      ]
+    ],
+    "benefit": "Small repairs that make a daily difference",
+    "extra_title": "Repair or replacement? Make an informed choice",
+    "extra": "A sound bowl with worn tank parts is often a repair candidate. Cracked porcelain, repeated problems, or inefficient older equipment may justify replacement. Compare total installed cost and compatibility rather than age alone.",
+    "faq": [
+      [
+        "Is water at the base always a wax seal problem?",
+        "No. Supply connections, condensation, tank seals, or cracked porcelain can create similar symptoms. The source should be checked before removing the toilet."
+      ],
+      [
+        "Why does the tank refill when nobody uses it?",
+        "Water may be leaking from the tank into the bowl. A worn seal or incorrect overflow level is common, but diagnosis should confirm the cause."
+      ]
+    ]
+  },
+  {
+    "slug": "water-heater",
+    "name": "Water Heater Services",
+    "icon": "heater",
+    "short": "Reliable hot water starts with the right repair, maintenance, or replacement plan.",
+    "intro": "Hot water should fit your household, not the other way around. A proper assessment considers equipment type, energy source, household demand, venting, and the cause of any change in performance.",
+    "problems": [
+      [
+        "Not enough hot water",
+        "Changes in demand, thermostat settings, heating components, or sediment may affect capacity."
+      ],
+      [
+        "Unusual sounds",
+        "Popping or rumbling can indicate sediment, while other noises require equipment-specific diagnosis."
+      ],
+      [
+        "Water near the tank",
+        "Leaks may come from fittings, relief piping, or the tank itself. A leaking tank often requires replacement."
+      ]
+    ],
+    "signs": "Inconsistent temperature, visible corrosion, discolored hot water, or leakage calls for an assessment. For gas odor, leave the area and call the utility or 911.",
+    "solutions": [
+      [
+        "Water heater repair",
+        "Assess controls, connections, and heating components before recommending work."
+      ],
+      [
+        "Replacement and installation",
+        "Match capacity, energy requirements, clearances, and local permit rules."
+      ],
+      [
+        "Maintenance planning",
+        "Follow manufacturer instructions for inspection, flushing, and component checks."
+      ]
+    ],
+    "benefit": "Hot water solutions that fit your home",
+    "extra_title": "Tank, tankless, electric, and gas systems",
+    "extra": "Storage tanks offer a reserve of heated water. Tankless systems heat water on demand but must be sized for simultaneous use. Heat-pump water heaters require suitable space and airflow. Compare total installation needs, not just equipment price.",
+    "faq": [
+      [
+        "Should I repair or replace my water heater?",
+        "Consider tank condition, repair cost, energy use, warranty, and whether the unit meets current demand. A leaking tank usually cannot be repaired."
+      ],
+      [
+        "Can I adjust or test the relief valve myself?",
+        "Hot discharge can cause serious burns. Have a qualified professional inspect safety components according to the manufacturer\u2019s procedure. Never cap a relief pipe."
+      ]
+    ]
+  },
+  {
+    "slug": "pipe-repair",
+    "name": "Pipe Repair",
+    "icon": "pipe",
+    "short": "Repair damaged lines and plan durable improvements for the water system you rely on.",
+    "intro": "A lasting pipe repair starts with the material, failure point, and surrounding condition. A single damaged fitting and widespread corrosion need very different plans.",
+    "problems": [
+      [
+        "Corroded metal lines",
+        "Older galvanized or copper lines may show narrowing, pinhole leaks, or surface corrosion."
+      ],
+      [
+        "Freeze damage",
+        "Trapped water expands when frozen and can split pipes or fittings in exposed spaces."
+      ],
+      [
+        "Joint and connection leaks",
+        "Stress, incompatible materials, or worn connections may allow recurring leaks."
+      ]
+    ],
+    "signs": "Repeated pinhole leaks, unexplained pressure changes, rusty water, or wet areas around pipe runs deserve attention. Confirm whether discoloration also affects neighboring properties.",
+    "solutions": [
+      [
+        "Localized pipe repairs",
+        "Replace a damaged section with compatible materials and approved connections."
+      ],
+      [
+        "Branch-line replacement",
+        "Renew a problem section when isolated repairs are no longer practical."
+      ],
+      [
+        "Repiping assessment",
+        "Compare phased and full replacement options where deterioration is widespread."
+      ]
+    ],
+    "benefit": "Repair the problem. Plan for the system.",
+    "extra_title": "Pipe materials we work with",
+    "extra": "Copper, PEX, CPVC, PVC, and cast iron each have different applications and joining requirements. Material selection must follow local codes, pressure and temperature ratings, and manufacturer instructions.",
+    "faq": [
+      [
+        "Can different pipe materials be joined?",
+        "Often yes, with approved transition fittings and attention to corrosion, temperature, pressure, and local code. Improvised connections are not a safe substitute."
+      ],
+      [
+        "What should I do if a pipe freezes?",
+        "Shut off the water if a split is suspected. Never use an open flame. If the pipe is inaccessible or near electricity, seek professional help."
+      ]
+    ]
+  },
+  {
+    "slug": "bathroom-plumbing",
+    "name": "Bathroom Plumbing",
+    "icon": "bath",
+    "short": "Thoughtfully installed fixtures and dependable repairs for your hardest-working room.",
+    "intro": "A comfortable bathroom depends on what you see and what is behind the wall. Coordinate supply, drainage, fixture selection, and access before a repair or renovation begins.",
+    "problems": [
+      [
+        "Dripping taps and showers",
+        "Worn cartridges, seals, or damaged valve seats can cause persistent drips."
+      ],
+      [
+        "Slow tubs and basins",
+        "Hair and residue may restrict local drains; recurring problems need a broader check."
+      ],
+      [
+        "Uneven shower temperature",
+        "A worn mixing valve, pressure imbalance, or water heater issue can affect comfort."
+      ]
+    ],
+    "signs": "Drips, loose fixtures, moisture around tile edges, or repeated changes in water temperature should be investigated before cosmetic finishes are replaced.",
+    "solutions": [
+      [
+        "Fixture repair",
+        "Diagnose and service compatible taps, shower valves, toilets, and drain fittings."
+      ],
+      [
+        "Bathroom installations",
+        "Plan fixture positioning, shutoffs, and accessible connections before installation."
+      ],
+      [
+        "Renovation rough-in",
+        "Coordinate water lines, vents, and waste pipes with the wider remodeling team."
+      ]
+    ],
+    "benefit": "Better bathrooms begin behind the walls",
+    "extra_title": "Renovation plumbing, planned properly",
+    "extra": "Moving a shower or toilet can change drain gradients, vent requirements, and permits. Agree on fixture specifications and service access early, and complete inspections before closing walls. Waterproofing and structural work may require other qualified trades.",
+    "faq": [
+      [
+        "Can I move a toilet to another wall?",
+        "It may be possible, but the drain route, venting, structure, and local permit rules must be assessed first."
+      ],
+      [
+        "Is plumbing the same as shower waterproofing?",
+        "No. Supply and drainage work is separate from the waterproofing system. Coordinate responsibilities between qualified trades to avoid gaps."
+      ]
+    ]
+  },
+  {
+    "slug": "sewer-line-repair",
+    "name": "Sewer Line Repair",
+    "icon": "sewer",
+    "short": "Get to the root of recurring backups with clear inspection and repair options.",
+    "intro": "A sewer problem needs a whole-line perspective. Camera findings, pipe condition, slope, access, and local rules all influence whether cleaning, a spot repair, or replacement makes sense.",
+    "problems": [
+      [
+        "Root intrusion",
+        "Roots can enter joints and cracks, trapping debris and creating recurring restrictions."
+      ],
+      [
+        "Offsets and broken pipes",
+        "Movement or deterioration can damage alignment and interrupt normal flow."
+      ],
+      [
+        "Bellied or collapsed sections",
+        "Low or failed sections may retain water and require physical correction."
+      ]
+    ],
+    "signs": "Several fixtures backing up, wastewater at a cleanout, or recurring restrictions after clearing may indicate a main-line problem. Stop using water if sewage returns indoors.",
+    "solutions": [
+      [
+        "Sewer camera inspection",
+        "Record accessible line conditions and identify the limitations of the inspection."
+      ],
+      [
+        "Targeted excavation repair",
+        "Replace a localized damaged area when access and surrounding pipe conditions allow."
+      ],
+      [
+        "Trenchless feasibility review",
+        "Evaluate lining or pipe bursting where the existing line and site are suitable."
+      ]
+    ],
+    "benefit": "Understand your sewer before committing to a repair",
+    "extra_title": "Traditional versus trenchless repair",
+    "extra": "Excavation gives direct access and may be needed to correct slope or collapse. Trenchless methods can reduce surface disruption, but suitability depends on diameter, condition, access points, and approvals. Neither method is automatically right for every property.",
+    "faq": [
+      [
+        "Does every sewer line qualify for trenchless repair?",
+        "No. Collapse, severe offsets, slope problems, site constraints, and local rules can rule out a particular method."
+      ],
+      [
+        "Will a camera inspection find every problem?",
+        "No. Standing water, heavy buildup, inaccessible sections, and poor visibility may limit findings. Ask for the recording and an explanation of any limitations."
+      ]
+    ]
+  }
+]

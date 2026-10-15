@@ -1,0 +1,145 @@
+.coverage-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  align-items: stretch
+}
+
+.coverage-map {
+  position: relative;
+  min-height: 390px;
+  border: 1px solid #d5e4f5;
+  background: #eaf2fb;
+  border-radius: 16px;
+  overflow: hidden
+}
+
+.map-grid {
+  position: absolute;
+  inset: -60px;
+  background: repeating-linear-gradient(30deg, transparent 0 60px, #fff 61px 66px, transparent 67px 120px), repeating-linear-gradient(120deg, transparent 0 70px, #fff 71px 76px, transparent 77px 130px);
+  opacity: .7
+}
+
+.map-river {
+  position: absolute;
+  left: 35%;
+  top: -50%;
+  width: 40px;
+  height: 200%;
+  background: #bcd9f7;
+  transform: rotate(30deg);
+  border-radius: 45%
+}
+
+.map-caption {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  right: 10px;
+  font-size: var(--ui-size);
+  letter-spacing: .1em;
+  color: #4a6684
+}
+
+.map-pin {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  background: #fff;
+  color: var(--navy);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: var(--ui-size);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  min-height: 44px
+}
+
+.map-pin[aria-pressed=true] {
+  background: var(--blue);
+  color: #fff
+}
+
+.map-pin .icon {
+  width: 17px;
+  height: 17px
+}
+
+.pin-0 {
+  top: 65%;
+  left: 25%
+}
+
+.pin-1 {
+  top: 15%;
+  left: 53%
+}
+
+.pin-2 {
+  top: 27%;
+  left: 10%
+}
+
+.pin-3 {
+  top: 46%;
+  left: 58%
+}
+
+.map-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+@media(max-width:767px) {
+  .coverage-layout {
+    grid-template-columns: 1fr
+  }
+
+  .coverage-map {
+    min-height: 330px
+  }
+
+  .map-pin {
+    font-size: var(--ui-size);
+    padding: 9px
+  }
+
+  .pin-3 {
+    left: 53%
+  }
+}
+
+/* Narrow maps become an unclipped location selector */
+.map-caption {
+  line-height: 1.5;
+  letter-spacing: .04em
+}
+
+@media(max-width:767px) {
+  .coverage-map {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 18px 110px;
+    min-height: 0
+  }
+
+  .map-pin {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 12px;
+    z-index: 1
+  }
+
+  .map-caption {
+    left: 18px;
+    right: 18px;
+    bottom: 16px
+  }
+}

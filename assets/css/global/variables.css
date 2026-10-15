@@ -1,0 +1,32 @@
+:root {
+  --navy: #0b2545;
+  --blue: #1769e0;
+  --orange: #ff7a00;
+  --light: #eff6ff;
+  --white: #fff;
+  --text: #64748b;
+  --heading: #14213d;
+  --border: #e2e8f0;
+  --muted: #f7f9fc;
+  --orange-dark: #a94000;
+  --radius: 16px;
+  --shadow: 0 10px 35px rgb(11 37 69 / 6%);
+  --container: 1200px;
+  --space: clamp(64px, 7vw, 104px);
+  --body-font: 'Inter', sans-serif;
+  --body-size: 20px;
+  --ui-size: 16px;
+  --heading-font: 'Syne', sans-serif
+}
+
+/* Shared motion tokens: short, restrained, and consistent. */
+:root {
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-fast: 200ms;
+  --motion-card: 300ms;
+  --motion-menu: 300ms;
+  --motion-dropdown: 200ms;
+  --motion-accordion: 300ms;
+  --motion-reveal: 620ms;
+  --motion-hero: 760ms;
+}

@@ -1,0 +1,44 @@
+.rating-summary {
+  display: grid;
+  grid-template-columns: .6fr 1.4fr;
+  gap: 50px;
+  align-items: center;
+  border: 1px solid var(--border);
+  padding: 40px;
+  border-radius: 16px
+}
+
+.illustrative-rating {
+  font-size: 68px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2
+}
+
+.rating-stars {
+  display: block;
+  letter-spacing: 5px;
+  color: #a94b00;
+  font-size: 22px
+}
+
+.rating-summary>div:first-child p {
+  font-size: var(--body-size)
+}
+
+@media(max-width:767px) {
+  .rating-summary {
+    grid-template-columns: 1fr;
+    padding: 25px;
+    gap: 24px
+  }
+}
+
+/* A service-approach heading, not a fabricated review score. */
+.illustrative-rating {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.2;
+  color: var(--heading);
+}

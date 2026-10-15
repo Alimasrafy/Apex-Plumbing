@@ -1,0 +1,76 @@
+.page-contact .card h2 {
+  font-size: 20px;
+  overflow-wrap: anywhere
+}
+
+.page-contact .card p {
+  overflow-wrap: anywhere;
+  font-size: var(--body-size)
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: start
+}
+
+.contact-aside {
+  padding-top: 18px
+}
+
+.contact-aside h2 {
+  font-size: 32px
+}
+
+.hours {
+  margin-top: 35px
+}
+
+.hours h3 {
+  font-size: 18px
+}
+
+.hours dl {
+  font-size: var(--ui-size);
+  margin-top: 22px
+}
+
+.hours dl>div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0
+}
+
+.hours dd {
+  margin: 0;
+  text-align: right;
+  color: var(--navy)
+}
+
+@media(max-width:1023px) {
+  .contact-layout {
+    gap: 30px;
+    grid-template-columns: 1.2fr 1fr
+  }
+
+  .page-contact .form-grid {
+    grid-template-columns: 1fr
+  }
+
+  .page-contact .field.full {
+    grid-column: auto
+  }
+}
+
+@media(max-width:767px) {
+  .contact-layout {
+    grid-template-columns: 1fr
+  }
+}
+
+.hours dl>div {
+  flex-wrap: wrap
+}

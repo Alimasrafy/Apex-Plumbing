@@ -1,0 +1,183 @@
+.site-footer {
+  background: var(--navy);
+  color: #b7c7db;
+  padding-top: 60px;
+  font-size: var(--ui-size);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .75fr .95fr 1.35fr;
+  gap: clamp(24px, 2vw, 32px);
+  padding-bottom: 40px;
+}
+
+.footer-grid > div {
+  min-width: 0;
+}
+
+.site-footer .brand-name {
+  color: #fff;
+}
+
+.footer-brand p {
+  margin-top: 20px;
+  max-width: 32ch;
+  line-height: 1.6;
+  font-size: var(--body-size);
+}
+
+.footer-brand p.demo-label {
+  margin-top: 16px;
+}
+
+.site-footer h2 {
+  font-family: var(--heading-font);
+  color: #fff;
+  font-size: var(--ui-size);
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 14px;
+}
+
+/* Compact rhythm without shrinking text or the navigation touch targets. */
+.footer-links {
+  display: grid;
+  gap: 0;
+}
+
+.footer-links a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 44px;
+  padding-block: 6px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+/* A paint-only underline grows on hover/focus; no layout or text movement. */
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  bottom: 6px;
+  height: 2px;
+  border-radius: 2px;
+  background: #8bbcff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--motion-fast) var(--motion-ease);
+}
+
+.footer-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-links a:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+/* Grid keeps wrapped text in its own column, aligned with the first line. */
+.footer-contact p {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 12px;
+  margin-bottom: 12px;
+  font-size: var(--body-size);
+  line-height: 1.6;
+}
+
+.footer-contact .icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 7px;
+  color: #8bbcff;
+}
+
+.footer-contact a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #8bbcff;
+  text-underline-offset: 5px;
+}
+
+.footer-contact .footer-phone {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.footer-contact small {
+  display: block;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #304763;
+  font-size: var(--ui-size);
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  border-top: 1px solid #304763;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: var(--ui-size);
+  line-height: 1.5;
+}
+
+.footer-bottom nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-bottom nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.template-note {
+  border-top: 1px solid #304763;
+  padding: 14px 0;
+  color: #b7c7db;
+  font-size: var(--ui-size);
+  line-height: 1.6;
+}
+
+.template-note a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-footer .demo-label {
+  color: #b7c7db;
+}
+
+.footer-links a,
+.footer-bottom nav a,
+.footer-contact a {
+  transition: color var(--motion-fast) ease-out, text-decoration-color var(--motion-fast) ease-out;
+}

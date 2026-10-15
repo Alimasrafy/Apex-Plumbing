@@ -1,0 +1,4 @@
+/* Dedicated styles for About Apex Plumbing | People-First Plumbing. Shared layout and components remain in global/component CSS. */
+.page-about .page-hero {
+  border-bottom-color: #dce8f7
+}

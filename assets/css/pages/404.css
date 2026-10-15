@@ -1,0 +1,36 @@
+.error-content {
+  text-align: center;
+  max-width: 760px;
+  margin: auto
+}
+
+.error-code {
+  font-family: var(--heading-font);
+  font-size: clamp(100px, 18vw, 180px);
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: -.08em
+}
+
+.error-content .eyebrow {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.error-content .actions {
+  justify-content: center
+}
+
+.error-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px
+}
+
+.error-content .lead {
+  max-width: 650px;
+  margin-inline: auto
+}

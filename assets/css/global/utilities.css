@@ -1,0 +1,301 @@
+.container {
+  /* Full-width sections; only their content is capped at 1200px. */
+  width: min(var(--container), calc(100% - 48px));
+  max-width: var(--container);
+  margin-inline: auto
+}
+
+.section {
+  padding-block: var(--space)
+}
+
+.section-soft {
+  background: var(--muted)
+}
+
+.section-blue {
+  background: var(--light)
+}
+
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 38px
+}
+
+.section-head h2 {
+  max-width: 650px
+}
+
+.section-head p {
+  max-width: 470px;
+  margin-top: 16px;
+  font-size: var(--body-size)
+}
+
+.center {
+  text-align: center
+}
+
+.center .eyebrow {
+  justify-content: center
+}
+
+.center p {
+  max-width: 630px;
+  margin-inline: auto;
+  font-size: var(--body-size)
+}
+
+.section-head.center {
+  display: block
+}
+
+.section-head.center h2 {
+  margin-inline: auto
+}
+
+.grid {
+  display: grid;
+  gap: 24px
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr))
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center
+}
+
+.stack {
+  display: grid;
+  gap: 20px
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px
+}
+
+.icon {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0
+}
+
+.check-list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 13px;
+  margin-block: 24px
+}
+
+.check-list li {
+  display: flex;
+  align-items: start;
+  gap: 11px;
+  color: var(--heading);
+  font-size: var(--body-size)
+}
+
+.check-list .icon {
+  color: var(--blue);
+  width: 19px;
+  height: 24px
+}
+
+.photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  aspect-ratio: 1.2
+}
+
+.notice {
+  border-left: 3px solid var(--blue);
+  padding: 18px 22px;
+  background: var(--light);
+  font-size: var(--body-size);
+  border-radius: 0 8px 8px 0
+}
+
+.notice strong {
+  color: var(--navy)
+}
+
+.notice a {
+  text-decoration: underline
+}
+
+.mt-24 {
+  margin-top: 24px
+}
+
+.mt-40 {
+  margin-top: 40px
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+  left: 12px;
+  transform: translateY(-160%);
+  padding: 12px 20px;
+  background: var(--white);
+  color: var(--navy);
+  border: 2px solid var(--blue)
+}
+
+.skip-link:focus {
+  transform: translateY(0)
+}
+
+:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 5px
+}
+
+.empty-state {
+  padding: 30px;
+  background: var(--light);
+  border-radius: var(--radius)
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: var(--ui-size);
+  padding: 5px 11px;
+  background: var(--light);
+  color: var(--blue);
+  border-radius: 50px;
+  font-weight: 600
+}
+
+.pill .icon {
+  width: 14px;
+  height: 14px
+}
+
+.demo-label {
+  font-size: var(--ui-size);
+  color: var(--text)
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin-block: 28px
+}
+
+.page-hero,
+.section-blue,
+.notice,
+.article-toc,
+.legal-toc,
+.final-cta {
+  color: #53657d
+}
+
+/* Intrinsic sizing for readable copy */
+.grid>*,
+.split>*,
+.faq-layout>*,
+.section-head>*,
+.actions>* {
+  min-width: 0
+}
+
+p,
+li,
+blockquote,
+figcaption,
+.notice {
+  overflow-wrap: break-word
+}
+
+.text-link {
+  line-height: 1.6;
+  min-height: 44px
+}
+
+.pill {
+  line-height: 1.5;
+  white-space: normal
+}
+
+/* Progressive motion: no hidden default states, permanent transforms, or global will-change. */
+.motion-reveal {
+  --reveal-distance: 24px;
+}
+
+.text-link .icon,
+.location-card>.icon {
+  transition: transform var(--motion-fast) var(--motion-ease);
+}
+
+.text-link:focus-visible .icon {
+  transform: translateX(3px);
+}
+
+.pill {
+  transition: background-color var(--motion-fast) ease-out, color var(--motion-fast) ease-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .text-link:hover .icon {
+    transform: translateX(3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .text-link:hover .icon,
+  .text-link:focus-visible .icon,
+  .location-card:hover>.icon {
+    transform: none;
+  }
+}
+
+@media(max-width:767px) {
+  .motion-reveal {
+    --reveal-distance: 16px
+  }
+}

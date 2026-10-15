@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Common Plumbing Problems Every Homeowner Should Know",
+    "category": "Home Care",
+    "slug": "article-1",
+    "short": "Know what to look for, what you can check, and when it\u2019s time to call a professional.",
+    "time": "7 min read",
+    "image": "hero/plumber-hero.webp"
+  },
+  {
+    "title": "How to Unclog a Drain Safely",
+    "category": "Drain Care",
+    "slug": "article-2",
+    "short": "A practical, chemical-free starting point for a slow sink or a stubborn everyday clog.",
+    "time": "6 min read",
+    "image": "blog/drain-care.webp"
+  },
+  {
+    "title": "Essential Water Heater Maintenance Tips",
+    "category": "Maintenance",
+    "slug": "article-3",
+    "short": "Build a safer maintenance routine around your equipment\u2014not guesswork.",
+    "time": "6 min read",
+    "image": "blog/water-heater.webp"
+  }
+]

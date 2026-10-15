@@ -1,0 +1,89 @@
+/* Shared screen-only palette: original light theme is the default.
+   No image inversion, font-size changes, layout changes, or theme-change animations. */
+:root { color-scheme: light; }
+@media screen {
+:root[data-theme="dark"] .demo-label { color: var(--text); }
+:root[data-theme="dark"] .page-hero, :root[data-theme="dark"] .section-blue, :root[data-theme="dark"] .notice, :root[data-theme="dark"] .article-toc, :root[data-theme="dark"] .legal-toc, :root[data-theme="dark"] .final-cta { color: var(--text); }
+:root[data-theme="dark"] .page-hero .pill { background: var(--white); }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --white: #0d1726;
+  --text: #b7c7db;
+  --heading: #edf3fc;
+  --blue: #8bbcff;
+  --light: #182b43;
+  --muted: #111f32;
+  --border: #354b65;
+  --shadow: 0 10px 35px rgb(0 0 0 / 22%);
+}
+:root[data-theme="dark"] .site-header, :root[data-theme="dark"] .site-header.is-scrolled { background: #101e30; }
+:root[data-theme="dark"] .main-nav, :root[data-theme="dark"] .nav-dropdown { background: #101e30; }
+:root[data-theme="dark"] .main-nav .nav-link { color: #c6d5e9; }
+:root[data-theme="dark"] .main-nav .nav-link:hover, :root[data-theme="dark"] .main-nav .nav-link[aria-current="page"], :root[data-theme="dark"] .main-nav .nav-link[data-section-current="true"] { color: var(--blue); }
+:root[data-theme="dark"] .card, :root[data-theme="dark"] .form-card, :root[data-theme="dark"] .filter-btn, :root[data-theme="dark"] .pagination button, :root[data-theme="dark"] .hero-float, :root[data-theme="dark"] .hero-availability { background: #152338; }
+:root[data-theme="dark"] .home-hero { background: linear-gradient(110deg, #101e30, #142840); }
+:root[data-theme="dark"] .hero-description, :root[data-theme="dark"] .hero-reassurance, :root[data-theme="dark"] .hero-demo, :root[data-theme="dark"] .review-card blockquote, :root[data-theme="dark"] .article-toc .demo-label { color: var(--text); }
+:root[data-theme="dark"] .brand-name, :root[data-theme="dark"] .menu-toggle, :root[data-theme="dark"] .btn-outline, :root[data-theme="dark"] .avatar, :root[data-theme="dark"] .form-status, :root[data-theme="dark"] .notice strong, :root[data-theme="dark"] .skip-link, :root[data-theme="dark"] .hero-float strong, :root[data-theme="dark"] .hero-availability strong, :root[data-theme="dark"] .hours dd, :root[data-theme="dark"] .illustrative-rating, :root[data-theme="dark"] .map-pin { color: var(--heading); }
+:root[data-theme="dark"] input, :root[data-theme="dark"] select, :root[data-theme="dark"] textarea { color: var(--heading); background: #0d1726; border-color: #526b88; }
+:root[data-theme="dark"] input::placeholder, :root[data-theme="dark"] textarea::placeholder { color: #99aec7; opacity: 1; }
+:root[data-theme="dark"] .field-error { color: #ffaba5; }
+:root[data-theme="dark"] input[aria-invalid="true"], :root[data-theme="dark"] select[aria-invalid="true"], :root[data-theme="dark"] textarea[aria-invalid="true"] { border-color: #ffaba5; }
+:root[data-theme="dark"] .avatar, :root[data-theme="dark"] .map-pin { background: #203650; }
+:root[data-theme="dark"] .btn-outline { border-color: #627c9a; }
+:root[data-theme="dark"] .btn-primary, :root[data-theme="dark"] .back-top, :root[data-theme="dark"] .sticky-call, :root[data-theme="dark"] .pagination button[aria-current="page"], :root[data-theme="dark"] .map-pin[aria-pressed="true"] { background: #1769e0; color: #fff; }
+:root[data-theme="dark"] .btn-primary:hover { background: #1056bd; }
+:root[data-theme="dark"] .filter-btn[aria-pressed="true"] { background: #294b73; border-color: #7fa8d8; color: #fff; }
+:root[data-theme="dark"] .brand-mark { background: #1769e0; }
+:root[data-theme="dark"] .card:hover .icon-box { background: #1769e0; color: #fff; }
+:root[data-theme="dark"] .card:hover { border-color: #6f9fe3; }
+:root[data-theme="dark"] .step-number { border-color: var(--border); }
+:root[data-theme="dark"] .review-card .stars, :root[data-theme="dark"] .rating-stars { color: #ffba72; }
+:root[data-theme="dark"] .coverage-map { background: #182b43; border-color: var(--border); }
+:root[data-theme="dark"] .map-grid { opacity: .12; }
+:root[data-theme="dark"] .map-river { background: #315a7f; }
+:root[data-theme="dark"] .map-caption { color: #c5d6ec; }
+:root[data-theme="dark"] ::selection { background: #285687; color: #fff; }
+}
+@media screen and (prefers-color-scheme: dark) {
+:root:not([data-theme]) .demo-label { color: var(--text); }
+:root:not([data-theme]) .page-hero, :root:not([data-theme]) .section-blue, :root:not([data-theme]) .notice, :root:not([data-theme]) .article-toc, :root:not([data-theme]) .legal-toc, :root:not([data-theme]) .final-cta { color: var(--text); }
+:root:not([data-theme]) .page-hero .pill { background: var(--white); }
+:root:not([data-theme]) {
+  color-scheme: dark;
+  --white: #0d1726;
+  --text: #b7c7db;
+  --heading: #edf3fc;
+  --blue: #8bbcff;
+  --light: #182b43;
+  --muted: #111f32;
+  --border: #354b65;
+  --shadow: 0 10px 35px rgb(0 0 0 / 22%);
+}
+:root:not([data-theme]) .site-header, :root:not([data-theme]) .site-header.is-scrolled { background: #101e30; }
+:root:not([data-theme]) .main-nav, :root:not([data-theme]) .nav-dropdown { background: #101e30; }
+:root:not([data-theme]) .main-nav .nav-link { color: #c6d5e9; }
+:root:not([data-theme]) .main-nav .nav-link:hover, :root:not([data-theme]) .main-nav .nav-link[aria-current="page"], :root:not([data-theme]) .main-nav .nav-link[data-section-current="true"] { color: var(--blue); }
+:root:not([data-theme]) .card, :root:not([data-theme]) .form-card, :root:not([data-theme]) .filter-btn, :root:not([data-theme]) .pagination button, :root:not([data-theme]) .hero-float, :root:not([data-theme]) .hero-availability { background: #152338; }
+:root:not([data-theme]) .home-hero { background: linear-gradient(110deg, #101e30, #142840); }
+:root:not([data-theme]) .hero-description, :root:not([data-theme]) .hero-reassurance, :root:not([data-theme]) .hero-demo, :root:not([data-theme]) .review-card blockquote, :root:not([data-theme]) .article-toc .demo-label { color: var(--text); }
+:root:not([data-theme]) .brand-name, :root:not([data-theme]) .menu-toggle, :root:not([data-theme]) .btn-outline, :root:not([data-theme]) .avatar, :root:not([data-theme]) .form-status, :root:not([data-theme]) .notice strong, :root:not([data-theme]) .skip-link, :root:not([data-theme]) .hero-float strong, :root:not([data-theme]) .hero-availability strong, :root:not([data-theme]) .hours dd, :root:not([data-theme]) .illustrative-rating, :root:not([data-theme]) .map-pin { color: var(--heading); }
+:root:not([data-theme]) input, :root:not([data-theme]) select, :root:not([data-theme]) textarea { color: var(--heading); background: #0d1726; border-color: #526b88; }
+:root:not([data-theme]) input::placeholder, :root:not([data-theme]) textarea::placeholder { color: #99aec7; opacity: 1; }
+:root:not([data-theme]) .field-error { color: #ffaba5; }
+:root:not([data-theme]) input[aria-invalid="true"], :root:not([data-theme]) select[aria-invalid="true"], :root:not([data-theme]) textarea[aria-invalid="true"] { border-color: #ffaba5; }
+:root:not([data-theme]) .avatar, :root:not([data-theme]) .map-pin { background: #203650; }
+:root:not([data-theme]) .btn-outline { border-color: #627c9a; }
+:root:not([data-theme]) .btn-primary, :root:not([data-theme]) .back-top, :root:not([data-theme]) .sticky-call, :root:not([data-theme]) .pagination button[aria-current="page"], :root:not([data-theme]) .map-pin[aria-pressed="true"] { background: #1769e0; color: #fff; }
+:root:not([data-theme]) .btn-primary:hover { background: #1056bd; }
+:root:not([data-theme]) .filter-btn[aria-pressed="true"] { background: #294b73; border-color: #7fa8d8; color: #fff; }
+:root:not([data-theme]) .brand-mark { background: #1769e0; }
+:root:not([data-theme]) .card:hover .icon-box { background: #1769e0; color: #fff; }
+:root:not([data-theme]) .card:hover { border-color: #6f9fe3; }
+:root:not([data-theme]) .step-number { border-color: var(--border); }
+:root:not([data-theme]) .review-card .stars, :root:not([data-theme]) .rating-stars { color: #ffba72; }
+:root:not([data-theme]) .coverage-map { background: #182b43; border-color: var(--border); }
+:root:not([data-theme]) .map-grid { opacity: .12; }
+:root:not([data-theme]) .map-river { background: #315a7f; }
+:root:not([data-theme]) .map-caption { color: #c5d6ec; }
+:root:not([data-theme]) ::selection { background: #285687; color: #fff; }
+}

@@ -1,0 +1,204 @@
+.announcement {
+  background: var(--navy);
+  color: #e2ecf9;
+  font-size: var(--ui-size)
+}
+
+.announcement .container {
+  min-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px
+}
+
+.announcement p,
+.announcement a {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+.announcement .icon {
+  width: 14px;
+  height: 14px;
+  color: #ffad61
+}
+
+.announcement a {
+  color: #fff;
+  font-weight: 500
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgb(255 255 255 / 98%);
+  border-bottom: 1px solid var(--border);
+
+}
+
+.site-header.is-scrolled {
+  box-shadow: var(--shadow)
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  min-height: 88px
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 0
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 46px;
+  background: var(--blue);
+  color: #fff;
+  clip-path: polygon(50% 0, 95% 21%, 95% 69%, 50% 100%, 5% 69%, 5% 21%)
+}
+
+.brand-mark .icon {
+  width: 26px;
+  height: 26px;
+  stroke-width: 2
+}
+
+.brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  color: var(--navy);
+  line-height: 1
+}
+
+.brand-name small {
+  display: block;
+  font-family: var(--body-font);
+  font-size: var(--ui-size);
+  letter-spacing: .26em;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-top: 4px
+}
+
+.header-cta {
+  white-space: nowrap
+}
+
+.menu-toggle {
+  display: none;
+  background: var(--light);
+  color: var(--navy);
+  padding: 12px;
+  border-radius: 8px
+}
+
+.menu-toggle .icon {
+  width: 23px;
+  height: 23px
+}
+
+/* Readable announcement and touch targets */
+.announcement .container {
+  padding-block: 8px
+}
+
+.announcement p {
+  display: block;
+  line-height: 1.55
+}
+
+.announcement p .icon {
+  display: inline-block;
+  vertical-align: -.15em;
+  margin-right: 7px
+}
+
+.menu-toggle {
+  min-width: 44px;
+  min-height: 44px;
+  flex-shrink: 0
+}
+
+.header-inner {
+  column-gap: 20px
+}
+
+/* Stable sticky header and a simple three-stroke menu-to-close interaction. */
+.site-header {
+  transition: background-color var(--motion-fast) ease-out, box-shadow var(--motion-fast) ease-out;
+}
+
+.site-header.is-scrolled {
+  background: #fff;
+}
+
+.menu-line {
+  transition: transform var(--motion-menu) var(--motion-ease), opacity 180ms ease-out;
+  transform-box: view-box;
+}
+
+.menu-line-top {
+  transform-origin: 12px 6px;
+}
+
+.menu-line-middle {
+  transform-origin: 12px 12px;
+}
+
+.menu-line-bottom {
+  transform-origin: 12px 18px;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-line-top {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-line-middle {
+  opacity: 0;
+  transform: scaleX(0.45);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-line-bottom {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* One accessible color-mode control, available without opening the mobile menu. */
+.theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--heading);
+  background: var(--light);
+  transition: border-color var(--motion-fast) ease-out, background-color var(--motion-fast) ease-out;
+}
+.theme-toggle:hover { border-color: var(--blue); }
+.theme-toggle .icon { width: 21px; height: 21px; }
+.theme-icon-sun { display: none; }
+[data-theme="dark"] .theme-icon-sun { display: block; }
+[data-theme="dark"] .theme-icon-moon { display: none; }
+@media (max-width:1199px) {
+  .site-header .header-inner { column-gap: 14px; }
+  .site-header .menu-toggle { margin-left: 0; }
+}
+@media (max-width:767px) {
+  .site-header .header-inner { column-gap: 10px; }
+  .theme-toggle { margin-left: auto; }
+}

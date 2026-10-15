@@ -1,0 +1,81 @@
+.emergency-band {
+  padding: 50px 0;
+  background: var(--navy);
+  color: #c5d3e5;
+  position: relative;
+  overflow: hidden
+}
+
+.emergency-band .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px
+}
+
+.emergency-band h2 {
+  color: #fff;
+  font-size: clamp(25px, 3vw, 34px)
+}
+
+.emergency-band p {
+  font-size: var(--body-size);
+  margin-top: 12px
+}
+
+.emergency-band .eyebrow {
+  color: #ffac62
+}
+
+.emergency-band .actions {
+  margin: 0;
+  flex-shrink: 0
+}
+
+.final-cta {
+  background: var(--light);
+  padding: 70px 0
+}
+
+.final-cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px
+}
+
+.final-cta h2 {
+  font-size: clamp(27px, 3vw, 36px)
+}
+
+.final-cta p {
+  font-size: var(--body-size);
+  margin-top: 12px
+}
+
+.final-cta .actions {
+  margin: 0;
+  flex-shrink: 0
+}
+
+/* No flash or pulse: a light overlay only responds to deliberate hover. */
+.emergency-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(255 255 255 / 3%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--motion-card) ease-out;
+}
+
+.emergency-band .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .emergency-band:hover::before {
+    opacity: 1;
+  }
+}

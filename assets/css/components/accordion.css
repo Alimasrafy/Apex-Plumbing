@@ -1,0 +1,108 @@
+.faq-layout {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 80px
+}
+
+.faq-intro p {
+  margin-top: 20px;
+  font-size: var(--body-size)
+}
+
+.faq-intro .text-link {
+  margin-top: 22px
+}
+
+.faq-list details {
+  border-bottom: 1px solid var(--border)
+}
+
+.faq-list details:first-child {
+  border-top: 1px solid var(--border)
+}
+
+.faq-list summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 23px 0;
+  font-size: var(--body-size);
+  font-weight: 600;
+  color: var(--heading)
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none
+}
+
+.faq-list summary::after {
+  font-weight: 400;
+  color: var(--blue)
+}
+
+.faq-list details p {
+  padding: 0 30px 23px 0;
+  font-size: var(--body-size);
+  line-height: 1.9
+}
+
+/* Native details remain the semantic owner; unsupported browsers keep instant disclosure. */
+.faq-list details {
+  transition: border-color var(--motion-accordion) ease-out;
+}
+
+.faq-list details[open] {
+  border-bottom-color: #9bbdea;
+}
+
+.faq-list summary {
+  transition: color var(--motion-fast) ease-out;
+}
+
+.faq-list details[open] summary {
+  color: var(--blue);
+}
+
+.faq-list summary::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  background: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 2px, 2px 100%;
+  transition: transform var(--motion-accordion) var(--motion-ease), background-size var(--motion-accordion) var(--motion-ease);
+}
+
+.faq-list details[open] summary::after {
+  content: '';
+  background-size: 100% 2px, 2px 0%;
+  transform: rotate(180deg);
+}
+
+@supports (interpolate-size: allow-keywords) and selector(details::details-content) {
+  .faq-list details {
+    interpolate-size: allow-keywords;
+  }
+
+  .faq-list details::details-content {
+    block-size: 0;
+    opacity: 0;
+    overflow: clip;
+    transition: block-size var(--motion-accordion) var(--motion-ease), opacity var(--motion-fast) ease-out, content-visibility var(--motion-accordion) allow-discrete;
+  }
+
+  .faq-list details[open]::details-content {
+    block-size: auto;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-list details::details-content {
+    transition: none;
+  }
+}

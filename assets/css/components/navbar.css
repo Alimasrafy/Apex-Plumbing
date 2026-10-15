@@ -1,0 +1,203 @@
+.main-nav>ul {
+  display: flex;
+  gap: 14px;
+  align-items: center
+}
+
+.main-nav li {
+  position: relative
+}
+
+.main-nav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 30px 0;
+  font-size: var(--ui-size);
+  font-weight: 600;
+  color: #354459;
+  white-space: nowrap
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link[aria-current=page] {
+  color: var(--blue)
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  gap: 4px
+}
+
+.dropdown-toggle {
+  background: none;
+  color: var(--text);
+  padding: 8px 2px
+}
+
+.dropdown-toggle .icon {
+  height: 12px;
+  width: 12px
+}
+
+.nav-dropdown {
+  position: absolute;
+  left: -20px;
+  top: calc(100% - 2px);
+  width: 245px;
+  padding: 12px !important;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow)
+}
+
+.nav-dropdown a {
+  display: block;
+  padding: 9px 12px;
+  font-size: var(--ui-size);
+  border-radius: 6px
+}
+
+.nav-dropdown a:hover {
+  background: var(--light);
+  color: var(--blue)
+}
+
+.main-nav .mobile-nav-cta {
+  display: none
+}
+
+.main-nav .nav-link[data-section-current=true] {
+  color: var(--blue)
+}
+
+/* Readable dropdown links */
+.dropdown-toggle {
+  min-width: 32px;
+  min-height: 44px
+}
+
+.nav-dropdown {
+  width: 285px
+}
+
+.nav-dropdown a {
+  min-height: 44px;
+  line-height: 1.5
+}
+
+@media(max-width:1199px) {
+  .dropdown-toggle {
+    min-width: 44px
+  }
+
+  .nav-dropdown {
+    width: 100%
+  }
+}
+
+/* Underlines use paint-only transforms; dimensions never change on hover. */
+.main-nav .nav-link {
+  position: relative;
+  transition: color var(--motion-fast) ease-out;
+}
+
+.main-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 19px;
+  width: 100%;
+  height: 2px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--motion-fast) var(--motion-ease);
+}
+
+.main-nav .nav-link[aria-current="page"]::after,
+.main-nav .nav-link[data-section-current="true"]::after,
+.main-nav .nav-link:focus-visible::after {
+  transform: scaleX(1);
+  width: 100%;
+}
+
+.nav-dropdown a {
+  transition: background-color var(--motion-dropdown) ease-out, color var(--motion-dropdown) ease-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .main-nav .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width:1199px) {
+  .main-nav .nav-link::after {
+    bottom: 7px;
+    width: 40%;
+  }
+}
+
+/* Reserve the functional mobile header before deferred controls load.
+   No-JS keeps its expanded native navigation; load releases this on script failure. */
+@media (max-width: 1199px) {
+  html.no-js[data-ui-loading] .main-nav {
+    display: none;
+  }
+}
+
+/* Desktop navigation: consistent item rhythm, aligned labels and compact chevrons.
+   Mobile keeps its separate full-width disclosure and 44px touch controls. */
+@media (min-width: 1200px) {
+  .main-nav > ul {
+    gap: clamp(18px, 1.5vw, 24px);
+  }
+
+  .main-nav > ul > li,
+  .main-nav > ul > li > .nav-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav > ul > li > .nav-row {
+    gap: 0;
+  }
+
+  .main-nav > ul > li > .nav-link,
+  .main-nav > ul > li > .nav-row > .nav-link {
+    height: 88px;
+    padding-block: 0;
+    line-height: 1.5;
+  }
+
+  .main-nav > ul > li > .nav-row > .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 24px;
+    width: 24px;
+    min-width: 24px;
+    min-height: 44px;
+    padding: 0;
+  }
+
+  .main-nav > ul > li > .nav-row > .dropdown-toggle .icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .main-nav .nav-link::after {
+    bottom: 22px;
+  }
+}
+
+@media (min-width: 1200px) and (pointer: coarse) {
+  .main-nav > ul > li > .nav-row > .dropdown-toggle {
+    flex-basis: 44px;
+    width: 44px;
+    min-width: 44px;
+  }
+}

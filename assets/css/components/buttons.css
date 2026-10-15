@@ -1,0 +1,127 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 23px;
+  border-radius: 8px;
+  font-size: var(--ui-size);
+  font-weight: 600;
+  line-height: 1.4;
+  border: 1px solid transparent;
+
+}
+
+.btn:hover {
+  transform: translateY(-2px)
+}
+
+.btn .icon {
+  width: 17px;
+  height: 17px
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: #fff
+}
+
+.btn-primary:hover {
+  background: #1056bd
+}
+
+.btn-orange {
+  background: var(--orange);
+  color: var(--navy);
+  font-weight: 700
+}
+
+.btn-orange:hover {
+  background: #ff922f
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: #ccd7e4;
+  color: var(--navy)
+}
+
+.btn-outline:hover {
+  background: var(--light)
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--navy)
+}
+
+.btn-outline-light {
+  border-color: #8296af;
+  color: #fff
+}
+
+.btn-outline-light:hover {
+  background: #183b64
+}
+
+.back-top {
+  position: fixed;
+  bottom: 26px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow)
+}
+
+.sticky-call {
+  display: none
+}
+
+/* Button motion is restrained; focus indicators are retained independently. */
+.btn {
+  transition: background-color var(--motion-fast) ease-out, border-color var(--motion-fast) ease-out, box-shadow var(--motion-fast) ease-out, transform var(--motion-fast) var(--motion-ease);
+}
+
+.btn .icon {
+  transition: transform var(--motion-fast) var(--motion-ease);
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 4px rgb(23 105 224 / 15%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    box-shadow: 0 8px 18px rgb(11 37 69 / 12%);
+  }
+
+  .btn:hover .icon {
+    transform: translateX(3px);
+  }
+
+  .btn[href^="tel:"]:hover .icon {
+    transform: rotate(-8deg);
+  }
+}
+
+@media (hover: none),
+(pointer: coarse) {
+  .btn:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .btn:hover,
+  .btn:hover .icon {
+    transform: none;
+  }
+}

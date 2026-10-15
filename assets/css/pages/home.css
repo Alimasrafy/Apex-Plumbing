@@ -1,0 +1,447 @@
+.home-hero {
+  background: linear-gradient(110deg, #f7faff 0%, #eff6ff 100%);
+  padding: 62px 0 67px;
+  overflow: hidden
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center
+}
+
+.hero-copy h1 {
+  font-size: clamp(42px, 4.6vw, 64px);
+  line-height: 1.15;
+  letter-spacing: -.05em
+}
+
+.hero-copy h1 span {
+  color: var(--blue)
+}
+
+.hero-description {
+  font-size: var(--body-size);
+  max-width: 440px;
+  line-height: 1.95;
+  margin-top: 24px
+}
+
+.hero-copy .actions {
+  margin-top: 27px
+}
+
+.hero-reassurance {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: var(--ui-size);
+  margin-top: 26px;
+  color: #41546e
+}
+
+.hero-reassurance span {
+  display: flex;
+  gap: 6px;
+  align-items: center
+}
+
+.hero-reassurance .icon {
+  width: 14px;
+  height: 14px;
+  color: var(--blue)
+}
+
+.hero-demo {
+  font-size: var(--ui-size);
+  margin-top: 10px;
+  color: #64748b
+}
+
+.hero-visual {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  padding-bottom: 0
+}
+
+.hero-photo-wrap {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden
+}
+
+.hero-photo {
+  height: 455px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 62% center
+}
+
+
+
+.photo-caption {
+  position: static;
+  display: block;
+  margin: 0;
+  padding: 12px 18px;
+  font-size: var(--ui-size);
+  line-height: 1.5;
+  color: var(--heading);
+  background: var(--light)
+}
+
+.hero-availability {
+  position: static;
+  padding: 17px 20px;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 12px 25px #0b254510
+}
+
+.availability-icon {
+  width: 41px;
+  height: 41px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--blue);
+  background: var(--light);
+  flex-shrink: 0
+}
+
+.hero-availability strong {
+  display: block;
+  font-size: var(--ui-size);
+  color: var(--navy)
+}
+
+.hero-availability small {
+  display: block;
+  font-size: var(--ui-size)
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background: #178254;
+  border-radius: 50%;
+  margin-left: auto;
+  flex-shrink: 0
+}
+
+.hero-float {
+  position: absolute;
+  left: -33px;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 17px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: var(--shadow)
+}
+
+.hero-float .icon-box {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  border-radius: 8px
+}
+
+.hero-float .icon {
+  width: 21px;
+  height: 21px
+}
+
+.hero-float strong {
+  display: block;
+  font-size: var(--ui-size);
+  color: var(--navy)
+}
+
+.hero-float span {
+  font-size: var(--ui-size)
+}
+
+.trust-strip {
+  border-bottom: 1px solid var(--border);
+  padding: 29px 0
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+.trust-grid>div {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--border)
+}
+
+.trust-grid>div:first-child {
+  justify-content: start
+}
+
+.trust-grid>div:last-child {
+  border: 0
+}
+
+.trust-grid>.icon,
+.trust-grid>div>.icon {
+  color: var(--blue);
+  width: 29px;
+  height: 29px
+}
+
+.trust-grid strong {
+  display: block;
+  font-size: var(--ui-size);
+  color: var(--heading)
+}
+
+.trust-grid small {
+  display: block;
+  font-size: var(--ui-size)
+}
+
+.about-visual {
+  position: relative;
+  padding: 0 20px 23px 0
+}
+
+.about-visual .photo {
+  aspect-ratio: 1.15
+}
+
+.about-note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--navy);
+  color: #c8d5e6;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 23px 30px;
+  border: 5px solid #fff;
+  border-radius: 12px;
+  font-size: var(--ui-size)
+}
+
+.about-note strong {
+  color: #fff;
+  font-weight: 500
+}
+
+.about-note .icon {
+  color: #ff9c42;
+  width: 30px;
+  height: 30px
+}
+
+@media(max-width:1100px) {
+  .hero-grid {
+    gap: 40px
+  }
+
+  .hero-photo {
+    height: 440px
+  }
+
+  .hero-availability {
+    left: 14px;
+    right: 14px;
+    padding: 15px
+  }
+
+  .hero-float {
+    left: -15px
+  }
+
+  .trust-grid>div {
+    gap: 9px
+  }
+
+  .trust-grid strong {
+    font-size: var(--ui-size)
+  }
+}
+
+@media(max-width:767px) {
+  .home-hero {
+    padding: 38px 0 40px
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(40px, 9vw, 62px)
+  }
+
+  .hero-description {
+    max-width: none
+  }
+
+  .hero-copy .actions {
+    gap: 10px
+  }
+
+  .hero-copy .btn {
+    padding: 13px 18px;
+    font-size: var(--ui-size)
+  }
+
+  .hero-photo {
+    height: 370px
+  }
+
+  .hero-float {
+    left: 13px;
+    top: 15px;
+    padding: 10px 13px
+  }
+
+  .hero-availability strong {
+    font-size: var(--ui-size)
+  }
+
+  .hero-availability small {
+    font-size: var(--ui-size)
+  }
+
+  .hero-reassurance {
+    font-size: var(--ui-size);
+    gap: 15px
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 15px
+  }
+
+  .trust-grid>div {
+    border: 0;
+    justify-content: start
+  }
+
+  .trust-grid>div>.icon {
+    width: 25px;
+    height: 25px
+  }
+
+  .trust-grid strong {
+    font-size: var(--ui-size)
+  }
+
+  .trust-grid small {
+    font-size: var(--ui-size)
+  }
+
+  .trust-strip {
+    padding: 25px 0
+  }
+
+  .about-note {
+    padding: 17px 22px
+  }
+
+  .hero-availability {
+    left: 12px;
+    right: 12px
+  }
+
+  .hero-availability .availability-icon {
+    width: 34px;
+    height: 34px
+  }
+}
+
+/* Readable badges without mobile overlap */
+.hero-float {
+  max-width: calc(100% - 26px)
+}
+
+.hero-float>div {
+  min-width: 0
+}
+
+.hero-float .icon-box {
+  flex-shrink: 0
+}
+
+.hero-float strong,
+.hero-availability strong {
+  line-height: 1.5
+}
+
+.hero-availability>span:nth-child(2) {
+  min-width: 0
+}
+
+
+
+
+
+.trust-grid>div>span {
+  min-width: 0
+}
+
+@media(max-width:767px) {
+  .hero-visual {
+    display: grid;
+    gap: 14px;
+    padding-bottom: 0
+  }
+
+  .hero-float,
+  .hero-availability {
+    position: static;
+    max-width: none;
+    width: 100%;
+    margin: 0
+  }
+
+  .hero-float {
+    order: -1
+  }
+
+
+
+  .hero-reassurance {
+    gap: 12px
+  }
+
+  .about-note {
+    max-width: calc(100% - 12px)
+  }
+}
+
+/* One-time hero entrances are driven by animations.js, with no hidden CSS defaults. */
+.about-note {
+  transition: transform var(--motion-card) var(--motion-ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about-visual:hover .about-note {
+    transform: translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-visual:hover .about-note {
+    transform: none;
+  }
+}

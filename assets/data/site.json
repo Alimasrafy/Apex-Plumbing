@@ -1,0 +1,70 @@
+{
+  "brand": "Apex Plumbing",
+  "phone": "+8801718658326",
+  "email": "alimasrafi@zohomail.com",
+  "domain": null,
+  "formEndpoint": null,
+  "pages": [
+    "index.html",
+    "pages/about/about.html",
+    "pages/services/services.html",
+    "pages/services/emergency-plumbing.html",
+    "pages/services/drain-cleaning.html",
+    "pages/services/leak-detection.html",
+    "pages/services/toilet-repair.html",
+    "pages/services/water-heater.html",
+    "pages/services/pipe-repair.html",
+    "pages/services/bathroom-plumbing.html",
+    "pages/services/sewer-line-repair.html",
+    "pages/service-areas/service-areas.html",
+    "pages/service-areas/location-1.html",
+    "pages/service-areas/location-2.html",
+    "pages/service-areas/location-3.html",
+    "pages/service-areas/location-4.html",
+    "pages/reviews/reviews.html",
+    "pages/blog/blog.html",
+    "pages/blog/article-1.html",
+    "pages/blog/article-2.html",
+    "pages/blog/article-3.html",
+    "pages/contact/contact.html",
+    "pages/legal/privacy-policy.html",
+    "pages/legal/terms-and-conditions.html",
+    "pages/legal/cookie-policy.html",
+    "pages/legal/accessibility.html",
+    "pages/thank-you.html",
+    "pages/404.html"
+  ],
+  "phoneChannel": "WhatsApp",
+  "whatsapp": "https://wa.me/8801718658326",
+  "contactLocation": {
+    "city": "Dhaka",
+    "country": "Bangladesh"
+  },
+  "serviceAreas": [
+    {
+      "city": "Austin",
+      "state": "Texas",
+      "country": "United States"
+    },
+    {
+      "city": "Round Rock",
+      "state": "Texas",
+      "country": "United States"
+    },
+    {
+      "city": "Cedar Park",
+      "state": "Texas",
+      "country": "United States"
+    },
+    {
+      "city": "Pflugerville",
+      "state": "Texas",
+      "country": "United States"
+    }
+  ],
+  "businessHours": "9:00 AM\u20136:00 PM",
+  "daysAndTimezone": "Confirm appointment arrangements directly",
+  "urgentService": "By prior discussion and confirmed availability",
+  "enquiryHandoff": "User-reviewed WhatsApp draft; user presses Send",
+  "reviewsPublished": false
+}

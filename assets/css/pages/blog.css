@@ -1,0 +1,11 @@
+.featured-article {
+  gap: 55px
+}
+
+.featured-article .photo {
+  aspect-ratio: 1.3
+}
+
+.featured-article h2 {
+  font-size: clamp(28px, 3vw, 36px)
+}

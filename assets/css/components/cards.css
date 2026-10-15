@@ -1,0 +1,380 @@
+.card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+
+}
+
+.card:hover {
+  border-color: #bacfed;
+  box-shadow: var(--shadow)
+}
+
+.card h3 {
+  margin-bottom: 12px
+}
+
+.card p {
+  font-size: var(--body-size);
+  line-height: 1.85
+}
+
+.card .text-link {
+  margin-top: 22px
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: var(--light);
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+  margin-bottom: 25px
+}
+
+.icon-box .icon {
+  width: 27px;
+  height: 27px
+}
+
+.service-card {
+  position: relative
+}
+
+.service-card .card-number {
+  position: absolute;
+  right: 25px;
+  top: 26px;
+  font-size: var(--ui-size);
+  color: var(--text)
+}
+
+.service-card h3 {
+  font-size: 17px
+}
+
+.feature-card {
+  padding: 20px 0;
+  background: none;
+  border: 0
+}
+
+.feature-card .icon-box {
+  margin-bottom: 20px
+}
+
+.review-card .stars {
+  color: #a94b00;
+  letter-spacing: 3px;
+  font-size: var(--ui-size);
+  margin-bottom: 18px
+}
+
+.review-card blockquote {
+  font-size: var(--body-size);
+  line-height: 1.9;
+  color: #354459
+}
+
+.review-person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e9f0fa;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: var(--ui-size)
+}
+
+.review-person strong {
+  display: block;
+  color: var(--heading);
+  font-size: var(--ui-size)
+}
+
+.review-person span {
+  font-size: var(--ui-size)
+}
+
+.blog-card {
+  overflow: hidden;
+  padding: 0
+}
+
+.blog-card .blog-image {
+  display: block;
+  position: relative;
+  aspect-ratio: 1.6;
+  overflow: hidden;
+  background: var(--light)
+}
+
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.blog-card:hover img {
+  transform: scale(1.04)
+}
+
+.blog-body {
+  padding: 25px
+}
+
+.blog-body h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-block: 12px
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--ui-size)
+}
+
+.blog-meta .icon {
+  width: 13px;
+  height: 13px
+}
+
+.location-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 23px
+}
+
+.location-card .icon-box {
+  margin: 0;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0
+}
+
+.location-card h3 {
+  font-size: 16px;
+  margin: 0 0 4px
+}
+
+.location-card p {
+  font-size: var(--body-size)
+}
+
+.location-card>.icon {
+  margin-left: auto;
+  color: var(--blue);
+  width: 17px
+}
+
+.step {
+  position: relative
+}
+
+.step-number {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--blue);
+  font-size: var(--ui-size);
+  background: var(--light);
+  border: 1px solid #dce9fb;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 23px
+}
+
+.step h3 {
+  margin-bottom: 12px
+}
+
+.step p {
+  font-size: var(--body-size);
+  max-width: 320px
+}
+
+.content-card ul {
+  padding-left: 20px;
+  font-size: var(--body-size)
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  border-radius: 12px
+}
+
+.team-illustration {
+  width: 64px;
+  height: 64px;
+  background: var(--light);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-bottom: 22px
+}
+
+.team-illustration .icon {
+  width: 30px;
+  height: 30px;
+  color: var(--blue)
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 27px;
+  font-size: var(--ui-size)
+}
+
+.slider-controls .filter-btn {
+  min-width: 44px;
+  padding: 9px
+}
+
+.review-slider:not(.is-mobile) .slider-controls {
+  display: none
+}
+
+.location-card>div {
+  min-width: 0
+}
+
+.location-card h3,
+.location-card p {
+  overflow-wrap: anywhere
+}
+
+.card.blog-card {
+  padding: 0
+}
+
+.blog-meta {
+  flex-wrap: wrap;
+  row-gap: 8px
+}
+
+.review-person>div:last-child {
+  min-width: 0
+}
+
+.review-person span {
+  overflow-wrap: anywhere
+}
+
+/* Hover elevation, icon polish, and image zoom do not alter grid dimensions. */
+.card {
+  transition: border-color var(--motion-card) ease-out, box-shadow var(--motion-card) ease-out, transform var(--motion-card) var(--motion-ease);
+}
+
+.icon-box {
+  transition: background-color var(--motion-fast) ease-out, color var(--motion-fast) ease-out, transform var(--motion-card) var(--motion-ease);
+}
+
+.blog-card img,
+.photo,
+.project-image {
+  transition: transform var(--motion-card) var(--motion-ease);
+}
+
+.filter-btn {
+  transition: background-color var(--motion-fast) ease-out, color var(--motion-fast) ease-out, border-color var(--motion-fast) ease-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .blog-card:hover,
+  .location-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .review-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .service-card:hover .icon-box,
+  .location-card:hover .icon-box {
+    background: var(--blue);
+    color: #fff;
+  }
+
+  .feature-card:hover .icon-box {
+    transform: translateY(-3px);
+    background: #dceaff;
+  }
+
+  .location-card:hover>.icon {
+    transform: translateX(3px);
+  }
+
+  .photo:hover,
+  .project-image:hover {
+    transform: scale(1.015);
+  }
+
+  .blog-card:hover .pill {
+    background: #dceaff;
+  }
+}
+
+@media (hover: none),
+(pointer: coarse),
+(prefers-reduced-motion: reduce) {
+  .blog-card:hover img {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .service-card:hover,
+  .blog-card:hover,
+  .location-card:hover,
+  .review-card:hover,
+  .feature-card:hover .icon-box,
+  .photo:hover,
+  .project-image:hover {
+    transform: none;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+  .service-card:hover,
+  .blog-card:hover,
+  .location-card:hover,
+  .review-card:hover {
+    box-shadow: 0 14px 30px rgb(11 37 69 / 10%);
+  }
+}
+
+/* Service principles replace unsupported customer quotations. */
+.review-card .review-copy {
+  font-size: var(--body-size);
+  line-height: 1.75;
+  color: var(--text);
+}

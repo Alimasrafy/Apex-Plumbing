@@ -1,0 +1,49 @@
+.page-hero {
+  background: var(--light);
+  padding: 55px 0 65px;
+  border-bottom: 1px solid #e4eefb
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  list-style: none;
+  padding: 0;
+  font-size: var(--ui-size);
+  margin-bottom: 26px
+}
+
+.breadcrumbs li+li::before {
+  content: '/';
+  margin-right: 9px;
+  color: #9eacbc
+}
+
+.breadcrumbs a:hover {
+  color: var(--blue);
+  text-decoration: underline
+}
+
+.page-hero h1 {
+  max-width: 850px;
+  font-size: clamp(34px, 4vw, 52px)
+}
+
+.page-hero .lead {
+  max-width: 730px;
+  margin-top: 20px
+}
+
+.page-hero .eyebrow {
+  margin-top: 22px
+}
+
+.page-hero .pill {
+  background: #fff;
+  margin-top: 22px
+}
+
+.breadcrumbs a {
+  transition: color var(--motion-fast) ease-out, text-decoration-color var(--motion-fast) ease-out;
+}
