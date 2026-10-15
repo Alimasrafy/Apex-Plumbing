@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Add the sitemap URL after configuring the final HTTPS domain.
