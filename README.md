@@ -1,93 +1,186 @@
-# Apex Plumbing
+# APEX Plumbing
 
-A complete 28-page static plumbing website using **HTML5, CSS3 and native JavaScript**. No framework, database, app compilation or runtime CDN is required. The optional GitHub Pages workflow only packages static files and deployment metadata. Fonts and imagery are hosted locally.
+### From an AI-assisted frontend design to an editable Elementor website kit
 
-## Deploy on GitHub Pages
+APEX Plumbing is a plumbing-service website project developed step by step with the assistance of an AI Agent, followed by iterative design review, refinement and testing.
 
-**বাংলা step-by-step guide: [GITHUB-DEPLOY.md](GITHUB-DEPLOY.md).** Upload the extracted project contents to the repository root, including `.github/workflows/deploy-pages.yml`. In Settings → Pages, choose **GitHub Actions**, then run/re-run **Deploy Apex Plumbing to GitHub Pages** on the default branch. Subsequent default-branch pushes deploy automatically. Do not upload just the ZIP or an extra enclosing project folder.
+The project has two distinct parts:
 
-The workflow derives the real Pages/custom-domain URL, stages only runtime files into ignored `dist/`, validates local references/canonicals/sitemap, and generates a root `404.html` with base-path-safe assets and recovery links. Source content remains untouched. Project subpaths (`/repository/`), account sites and configured HTTPS custom domains are supported. No personal token or backend secret is required. Actual GitHub deployment still requires enabling Pages/Actions and a successful run in your own repository.
+- **Static frontend:** the HTML, CSS and JavaScript website in this repository, with a live GitHub Pages preview.
+- **WordPress / Elementor kit:** an installable companion plugin distributed through GitHub Releases. It imports native Elementor layouts, local design assets and website-specific functionality into WordPress.
 
-## Business details
+**[View Static Live Preview](https://alimasrafy.github.io/Apex-Plumbing/)** · **[Download Elementor Kit v1.2.1](https://github.com/Alimasrafy/Apex-Plumbing/releases/download/elementor-v4.3.5/Apex-Plumbing-Elementor-Kit-v1.2.1.zip)** · **[Browse Releases](https://github.com/Alimasrafy/Apex-Plumbing/releases)**
 
-- **Brand:** Apex Plumbing
-- **WhatsApp:** [+880 1718-658326](https://wa.me/8801718658326)
-- **Email:** alimasrafi@zohomail.com
-- **Contact location:** Dhaka, Bangladesh
-- **Service areas:** Austin, Round Rock, Cedar Park and Pflugerville, Texas, United States
-- **Contact hours:** 9:00 AM–6:00 PM; confirm the applicable time zone when arranging an appointment
-- **Urgent work and meetings:** by prior discussion and confirmed availability
+> **Choose the right download:** WordPress users should download `Apex-Plumbing-Elementor-Kit-v1.2.1.zip` from the release assets. GitHub’s automatic **Source code (zip)** and **Source code (tar.gz)** archives contain the tagged repository—not the installable plugin package. Older kit ZIPs may also be listed; choose v1.2.1 for the latest fixes described here.
 
-These details and the Texas coverage were supplied/confirmed by the project owner. No physical Texas branch address, customer endorsement, numeric review score, license, insurance, award or operating history has been invented.
+## Project overview
 
-## Preview and hosting
+The goal is to move beyond a visual showcase and provide an editable website starting point for plumbing-service businesses.
 
-Unzip the archive and open `index.html`, or serve the project with a standard static host. For development: `python -m http.server 3000 --bind 0.0.0.0`. This server is a development convenience, not a website backend. HTTP/HTTPS hosting gives predictable relative navigation and same-origin theme storage; file:// storage behavior varies by browser.
+The Elementor companion plugin is more than a single-feature add-on: it bundles the website’s page layouts, local media and fonts, styling, animations and core interactions. After installing the required dependencies, an administrator can import the website through **one approved setup action**, rather than rebuilding each page manually.
 
-The isolated file viewer cannot resolve a complete multi-file site. Use the live preview or a browser/static host for the working website.
+The live preview demonstrates the **static frontend**. It does not run WordPress, expose the Elementor editor, or demonstrate every later WordPress-specific fix.
 
-## Included pages
+## Features
 
-- Homepage and About
-- Service overview and eight individual plumbing services
-- Service-area overview and four Texas location pages
-- **Approach** page, explaining service principles rather than displaying unsupplied customer reviews
-- Blog listing and three separate article pages; **Blog → Blog Details** opens the first standalone article
-- Contact and enquiry form
-- Privacy, Terms, Cookie Policy and Accessibility
-- Enquiry next steps and 404
+- Responsive layouts for desktop, tablet and mobile.
+- Light and dark modes with a saved theme preference.
+- Service overview and eight individual service pages.
+- Service-area overview and four location pages.
+- Blog listing and three individual guides.
+- Blog search, category filters and pagination.
+- Desktop dropdown navigation and mobile navigation controls.
+- FAQ interactions and restrained animations with reduced-motion support.
+- Local fonts and illustrative imagery.
+- A WhatsApp enquiry flow that prepares a visitor-reviewed message draft.
 
-**Content width:** only the inner `.container` layout is capped at **1200px** and centered. Header, footer, section backgrounds and gradients remain full-width, matching the original design. On mobile/tablet, containers stay fluid with the original responsive grids, menu behavior and gutters. The whole website/body is not boxed.
+The Elementor kit additionally provides:
 
-The original routes and all existing IDs remain intact. Body copy uses Inter at 20px, supporting UI is at least 16px, and headings use locally hosted Syne. Desktop/mobile navigation, restrained native motion, keyboard disclosure controls, reduced motion, light/dark mode and responsive layouts are retained.
+- **24 WordPress pages, 3 WordPress posts and a 404 template.**
+- Shared native **Header, Footer and Global Single Post** templates.
+- Editable Elementor Containers and widgets—not entire pages embedded in HTML widgets.
+- Global colors and typography controls.
+- Custom Elementor widgets for theme switching, guide search, service-area selection and WhatsApp enquiry drafts.
 
-## Desktop dropdown navigation
+These specific custom functions are bundled into the companion plugin, reducing the need for a separate add-on for each one. **Elementor and Elementor Pro are still required.**
 
-At desktop widths (1200px+), mouse hover over Services, Service Areas or Blog opens its dropdown. Moving into submenu links keeps it open. Arrow click/tap, keyboard activation, Escape and focus behavior remain available; mobile stays tap-based. No layout or content-width change is involved. See `docs/dropdown-hover-report.md`.
+## WordPress / Elementor installation
 
-## Enquiries: how the form works
+### Requirements
 
-The contact form validates locally and prepares a **WhatsApp draft**. It does not send anything automatically. The visitor explicitly opens the prepared link, reviews the message in WhatsApp and chooses **Send**. Scope, price and appointments are agreed in conversation; the next-steps page does not imply delivery or booking.
+- WordPress and WordPress-capable hosting.
+- Hello Elementor theme.
+- Elementor.
+- **Your own official licensed Elementor Pro.**
 
-Form entries are not saved in cookies, localStorage or sessionStorage. Opening WhatsApp or an email app involves the chosen external provider under its own policies. Privacy and consent copy describe this behavior. Only a manually selected light/dark theme is saved under `apex-theme`.
+The plugin declares WordPress **6.8+** and PHP **8.0+** as minimums; every minimum-version combination has not been tested. Check the release documentation and verify your actual setup on staging.
 
-A separate backend is needed only if automatic email/server-side form processing is desired. None is included or implied. Do not change the interface to claim a request was received without an actual delivery-confirmation process.
+**Elementor Pro, paid licenses and WordPress core are not included.** This download is a companion plugin—not a WordPress theme, full-site backup, or official Envato/Elementor Import Kit archive.
 
-## Editing
+### Install and import
 
-The delivered HTML/CSS/JS are the source of truth. Edit them directly; no build is required. Shared components live under `assets/css/components/`, shared theme rules under `assets/css/global/theme.css`, and each page has its existing page stylesheet. Functional controls and the theme/handoff controller use `assets/js/main.js`; native motion uses `assets/js/animations.js`.
+1. Start with a fresh WordPress installation or a **fully backed-up staging site**.
+2. Install and activate **Hello Elementor**, **Elementor** and your own licensed **Elementor Pro**.
+3. Download **[Apex-Plumbing-Elementor-Kit-v1.2.1.zip](https://github.com/Alimasrafy/Apex-Plumbing/releases/download/elementor-v4.3.5/Apex-Plumbing-Elementor-Kit-v1.2.1.zip)**.
+4. In WordPress, open **Plugins → Add New → Upload Plugin**.
+5. Upload the ZIP, select **Install Now**, then **Activate**.
+6. Open **Apex Website Kit** in the WordPress dashboard.
+7. Read the global setup notice, approve the intended changes, and select **Import / complete Apex website**.
+8. Wait for the import to finish, then review the imported site.
 
-`assets/data/` contains reference inventories, not a database or runtime data source. Keep them aligned with public content when editing. `scripts/build_site.py` is now a harmless compatibility check and **does not regenerate or overwrite pages**.
+> **Important:** The approved import applies the kit’s homepage, global styles and shared templates. Do not run it on an existing live website without a backup and staging review. Keep the companion plugin active after import.
 
-## Domain-specific SEO
+### Customize with Elementor
 
-Titles, descriptions, service/city copy, internal links, H1 structure and Organization JSON-LD have been updated. The organization uses the actual supplied Dhaka contact location and approved Texas service areas, not an invented US office or rating.
+- **Pages / Posts → Edit with Elementor:** edit the page or article body.
+- **Templates → Theme Builder:** edit the shared Header, Footer and Global Single Post layout.
+- **Elementor Site Settings:** adjust global colors and typography.
+- **WordPress post fields:** update blog titles, excerpts and featured images.
+- **Apex custom widgets:** change their available labels, options and contact settings.
 
-For **GitHub Actions deployment**, no manual domain replacement is required. The workflow uses the actual URL from `actions/configure-pages` and generates canonical/og:url tags, sitemap.xml and a robots sitemap entry in the deployment artifact, leaving source pages unchanged. Account and custom-domain sites use their root; project sites preserve `/repository/`. No fabricated production URL is committed.
+Keep blog posts on the **Default** page layout. Before publishing your own website, replace the bundled Apex business details, contact information, service areas, imagery and policies with your approved content.
 
-For a different static host, you can still run the optional `scripts/configure_seo.py --base-url https://YOUR-ACTUAL-DOMAIN` with the approved URL (install `requirements-deploy.txt` first). `--root` can target a staging directory instead of the source. Do not use a synthetic QA URL for publication.
+### Updating an existing installation
 
-GitHub-specific root 404 handling is included in the Actions artifact. On other hosts configure real HTTP 404 handling yourself. Project-level `/repository/robots.txt` cannot set the shared host's root robots policy. See the deployment guide for custom-domain/DNS, HTTPS and final live-check instructions. Block indexing on any public staging copy if needed.
+| Installed version | Update route |
+| --- | --- |
+| **v1.2.0** | Back up, upload the v1.2.1 plugin ZIP, choose **Replace current with uploaded**, keep the plugin active and clear caches. No re-import or repeat icon refresh is needed for this hover fix. |
+| **v1.1** | Replace the plugin with the current ZIP, then follow the included guide for the explicitly approved icon refresh if it has not already been applied. |
+| **v1.0** | Replace the plugin with the current ZIP, complete the global blog layout upgrade first, then apply the approved icon refresh. Follow the included migration warnings. |
 
-## Images, fonts and policies
+**Do not use a full-site re-import as the update method.** If styling remains stale, regenerate Elementor CSS/data and clear host/CDN/browser caches.
 
-Plumbing visuals are illustrative and may be AI-generated; they are not presented as actual staff or completed jobs. Replace them with approved business photography if desired. Keep accurate alternative text and retain the local font license notices.
+Detailed installation, customization, migration and QA documents are included **inside the plugin ZIP’s `docs/` folder**. That folder is part of the release package, not the current repository root.
 
-Policy text reflects this website's implemented behavior, but the operator should review it for the actual business, hosting, service arrangements and applicable law before publication. Operating days/time zone, permits, professional requirements, prices and warranties must be confirmed for the work; no unsupported business credentials are asserted.
+## What changed in v1.2.1?
 
-## Executed quality assurance
+- Fixed native Posts thumbnails shifting out of their image frames on hover.
+- Preserved Elementor’s native thumbnail centering in touch and reduced-motion modes.
+- Kept the subtle whole-card hover lift.
+- Versioned the design stylesheet with the plugin release to help invalidate stale caches.
 
-See **`docs/responsive-report.md`**, **`docs/client-content-report.md`** and the current JSON/log evidence. The seven website suites below passed for the unchanged runtime site. Additional GitHub Pages artifact tests and their explicit local-simulation limits are documented in `docs/github-pages-report.md`. The remote Actions workflow has not been executed in your GitHub repository.
+Only `apex-elementor.php` and `assets/wp/design.css` changed at runtime from v1.2.0. This patch does not introduce a saved-document migration.
 
-- Content-only width suite: 28 pages × 23 widths (320–3840px) × 2 themes = 1,288 cases and 6,442 assertions; full-width design and centered content verified
-- 28 pages × 17 widths; 2,244 local references; 29 interactions
-- 56 light and 56 dark settled-state axe scans with no reported violations
-- 406 theme checks (392 page/theme/viewport cases)
-- 200 motion checks, with no compared header/font/main-width geometry differences
-- 504 readability/landscape cases plus menu checks
-- 129 client-copy and explicit WhatsApp-handoff checks
-- All 28 documents passed HTML5 validation; source syntax checks passed
+### Package integrity
 
-QA used Chromium and intercepted a synthetic WhatsApp handoff—no message was sent to the recipient. Real-device, Safari/Firefox, screen-reader, final-host and actual contact-channel checks remain recommended. These results are not legal advice, accessibility certification, search-ranking or message-delivery guarantees.
+For `Apex-Plumbing-Elementor-Kit-v1.2.1.zip`, the SHA-256 is:
 
-The scripts are development-only and use optional Python/Playwright/BeautifulSoup tooling; they are not needed for hosting. For strict CSP, allow the current inline startup and JSON-LD hashes recorded in `docs/client-modified-files.json`.
+```text
+871fd954f7349f93b66fb781d5ae06de3b313eca0ddcd690f7b4ce2ea37df8ab
+```
+
+## Static frontend: run locally
+
+The repository’s static website uses **HTML5, CSS3 and native JavaScript**. It does not require WordPress, Elementor, Node.js or a database to run.
+
+```bash
+git clone https://github.com/Alimasrafy/Apex-Plumbing.git
+cd Apex-Plumbing
+python -m http.server 3000
+```
+
+Open **http://localhost:3000** in your browser. Python is only a convenient local static server, not a website runtime dependency. You can also use another static server.
+
+### Current repository structure
+
+```text
+Apex-Plumbing/
+├── .github/
+│   └── workflows/
+│       └── static.yml
+├── assets/
+├── pages/
+├── scripts/
+├── LICENSE
+├── README.md
+├── index.html
+└── robots.txt
+```
+
+The current main branch contains the static frontend. The installable Elementor package is attached separately to **[GitHub Releases](https://github.com/Alimasrafy/Apex-Plumbing/releases)**; it is not a plugin folder in the repository root.
+
+### GitHub Pages
+
+The existing workflow is **`.github/workflows/static.yml`**, named **Deploy static content to Pages**. It deploys the repository as static content on pushes to `main`, or can be run manually from **Actions**.
+
+For a fork or a new deployment:
+
+1. Open **Settings → Pages**.
+2. Set **Build and deployment → Source** to **GitHub Actions**.
+3. Open **Actions → Deploy static content to Pages → Run workflow**, or push to `main`.
+4. Check the workflow result and the deployment URL.
+
+GitHub Pages hosts the static preview only. **It cannot execute the PHP/WordPress plugin.** The current workflow uploads the repository as its Pages artifact; do not commit secrets, databases, private test environments or paid plugin files.
+
+Before publishing on a different domain, review your actual URLs, metadata, sitemap/robots configuration and host-specific 404 handling. The current simple Pages workflow should not be assumed to generate those automatically.
+
+## Enquiries: what the form actually does
+
+The form validates input locally and prepares a **WhatsApp message draft**. The visitor opens WhatsApp, reviews the message and manually presses **Send**.
+
+It does **not** automatically send an email, store enquiries in a database, confirm receipt, book an appointment or guarantee message delivery. A separate backend/integration would be needed for those capabilities.
+
+## Testing and limitations
+
+The v1.2.1 patch was checked on an isolated WordPress installation with:
+
+- **156 focused checks**, including **96 thumbnail-hover cases**: 3 posts × 8 widths × 2 themes × 2 motion preferences.
+- Search, category filters, pagination, keyboard navigation and emulated mobile touch.
+- **520 frontend regression checks** across **448 route/width/theme cases**.
+- Final ZIP installation through the WordPress dashboard, installed-file hash matching and preservation of native documents/setup state.
+
+Test stack: WordPress **7.1.3**, Elementor **4.3.5**, Hello Elementor **3.5.1**, PHP **8.4.26** and Chromium. A user-supplied modified Pro **4.3.1** copy was used only in the isolated test environment. It is not included, certified official or certified safe. Use trusted official licensed Pro in production and test your actual version combination on staging.
+
+These are local test results—not a production-host, physical-device, every-browser, accessibility or security certification. Full scope and limitations are documented in `docs/QA-REPORT.md` **inside the plugin ZIP**.
+
+## Content, attribution and license
+
+- Built with the assistance of an AI Agent, with iterative review and testing.
+- Plumbing visuals are illustrative and may be AI-generated; they are not evidence of actual staff or completed projects.
+- Verify business claims, service availability, contact details and policies before publishing a site based on this project.
+- The repository contains the **GNU General Public License v3** text: see **[LICENSE](LICENSE)**.
+- Third-party fonts retain their own license notices. Preserve applicable notices and review the release package’s licensing/attribution when redistributing it.
+
+## Feedback
+
+Found an issue or have a suggestion? **[Open a GitHub issue](https://github.com/Alimasrafy/Apex-Plumbing/issues)** and include the affected page, browser, viewport width, steps to reproduce and, for WordPress issues, your relevant plugin/theme versions. Never post credentials or private customer information.
